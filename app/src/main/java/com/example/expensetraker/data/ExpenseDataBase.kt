@@ -34,9 +34,9 @@ abstract class ExpenseDataBase: RoomDatabase(){
                         CoroutineScope(Dispatchers.IO).launch {
                             val dao = getDatabase(context).expenseDao()
                             dao.insertExpense(ExpenseEntity(1, "Salary", 1200.0, System.currentTimeMillis(), "Work", "Income"))
-                            dao.insertExpense(ExpenseEntity(2, "Rent", 400.0, System.currentTimeMillis(), "Home", "Expense"))
-                            dao.insertExpense(ExpenseEntity(3, "Groceries", 140.0, System.currentTimeMillis(), "Food", "Expense"))
-                            dao.insertExpense(ExpenseEntity(4, "Freelancing", 200.0, System.currentTimeMillis(), "work", "Income"))
+                            dao.insertExpense(ExpenseEntity(2, "Rent", 400.0, System.currentTimeMillis(), "Starbucks", "Expense"))
+                            dao.insertExpense(ExpenseEntity(3, "Groceries", 140.0, System.currentTimeMillis(), "Netflix", "Expense"))
+                            dao.insertExpense(ExpenseEntity(4, "Freelancing", 200.0, System.currentTimeMillis(), "Paypal", "Income"))
 
                         }
                     }
